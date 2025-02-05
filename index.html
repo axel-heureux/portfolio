@@ -1,27 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheet/stylesheet.css">
+	<!-- Lien vers la feuille de style -->
+	<link rel="stylesheet" href="stylesheet/styles.css">
+	<!-- Lien vers les icônes Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Préconnexion pour les polices Google -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">	
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Lien vers la police Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">	
 	<title>Mon portfolio</title>
 </head>
 <body>
-	<header class="header">
-		<a href="#" class="logo"><span>Axel</span>HEUREUX</a>
 
+	<!-- Header du site -->
+	<header class="header">
+		<!-- Logo -->
+		<a href="#" class="logo"><span>Axel</span> HEUREUX</a>
+
+		<!-- Navigation principale -->
 		<nav class="navbar">
 			<a href="index.html" class="active">Portfolio</a>
-			<a href="#" class="active">Services</a>
-			<a href="#" class="active">Experience</a>
-			<a href="#" class="active">Projets</a>
+			<a href="#experience">Expérience</a>
+			<a href="#projets">Projets</a>
 		</nav>
 
-		<a href="#" class="contact">Contact</a>
+		<!-- Bouton de contact -->
+		<a href="#contact" class="contact">Contact</a>
 	</header>
+
+	<!-- Section d'accueil -->
+	<section class="home">
+		<div class="home-content">
+			<h3>Bonjour !</h3>
+			<h1>Je suis <span>Axel</span>, Développeur Web</h1>
+			<p>Passionné par le développement web, je crée des sites et applications performants et modernes.</p>
+			
+			<!-- Boutons d'action -->
+			<div class="btn-box">
+				<button class="btn-1">Embaucher</button>
+				<button class="btn-2">Expérience</button>
+			</div>
+		</div>
+		<div class="img-box">
+			<img src="assets/images/avatar.avif" alt="Photo d'Axel">
+		</div>
+	</section>
+
+	<!-- Section à propos -->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="assets/images/avatar.avif" alt="Photo d'Axel">
+		</div>
+
+		<div class="about-content">
+			<h2 class="heading">À propos de <span>moi</span></h2>
+			<h3>Développeur <span>Web</span></h3>
+			<p>Je suis un développeur web passionné avec une expertise en création de sites modernes et fonctionnels. Mon objectif est de rendre les expériences utilisateurs fluides et agréables.</p>
+			<a href="#experience" class="btn-2">Mon expérience</a>
+		</div>
+	</section>
+
+	<!-- Section de contact -->
+	<section class="contact-form" id="contact">
+		<h2 class="contact-me">Contactez <span>moi</span></h2>
+
+		<form action="process_form.php" method="POST">
+			<!-- Champs de texte pour le nom et l'email -->
+			<div class="input-box">
+				<input type="text" name="name" placeholder="Nom complet" required>
+				<input type="email" name="email" placeholder="Email" required>
+			</div>
+		
+			<!-- Champs pour le téléphone et le sujet -->
+			<div class="input-box">
+				<input type="number" name="phone" placeholder="Numéro de téléphone" required>
+				<input type="text" name="subject" placeholder="Sujet" required>
+			</div>
+		
+			<!-- Zone de texte pour le message -->
+			<textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+			
+			<!-- Bouton d'envoi -->
+			<input type="submit" value="Envoyer le message" class="btn-1">
+		</form>
+		
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<!-- Liens vers les réseaux sociaux -->
+		<div class="social">
+			<a href="https://www.linkedin.com/in/axel-heureux-4a0858303/"><i class='bx bxl-linkedin-square'></i></a>
+			<a href="https://github.com/axel-heureux"><i class='bx bxl-github'></i></a>
+			<a href="mailto:heureuxaxel@gmail.com?subject=Demande%20d'information&body=Bonjour," target="_blank">
+				<i class='bx bxl-gmail'></i>
+			</a>
+		</div>
+
+		<!-- Liste de liens importants -->
+		<ul class="list">
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">À propos de moi</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Politique de confidentialité</a></li>
+		</ul>
+
+		<!-- Copyright -->
+		<p class="copyright">© 2025 | Tous droits réservés</p>
+	</footer>
+
 </body>
 </html>

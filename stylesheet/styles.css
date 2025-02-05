@@ -1,0 +1,300 @@
+/* Reset de style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.81);
+    backdrop-filter: blur(10px); /* Effet flou sur l'arrière-plan */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* Placer l'en-tête au-dessus des autres éléments */
+}
+
+/* Logo */
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #efd96c; /* Changement de couleur au survol */
+    text-shadow: 0 0 25px #efd96c;
+    transform: scale(1.1); /* Légère agrandissement au survol */
+}
+
+/* Span pour le texte en jaune */
+span {
+    color: #efd96c;
+}
+
+/* Navigation principale */
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #efd96c;
+    border-bottom: 3px solid #efd96c; /* Soulignement au survol */
+}
+
+/* Bouton de contact */
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #efd96c;
+    box-shadow: 0 0 25px #efd96c; /* Ombre au survol */
+    color: white;
+}
+
+/* SECTION ACCUEIL */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 12em; /* Espacement entre le texte et l'image */
+    padding: 30px 12% 0;
+}
+
+/* Contenu de la section d'accueil */
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+/* Boîte de boutons dans l'accueil */
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+/* Bouton 1 (ex : "Embaucher") */
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Bouton 2 (ex : "Expérience") */
+.btn-2 {
+    padding: 15px 28px;
+    background-color: #efd96c;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: #efd96c;
+}
+
+/* Image de la section d'accueil */
+.img-box img {
+    border-radius: 10%;
+    width: 450px;
+}
+
+/* SECTION À PROPOS */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background-color: black;
+}
+
+/* Image de la section à propos */
+.about-img img {
+    position: relative;
+    width: 450px;
+    box-shadow: 0 0 25px #efd96c, 0 0 50px #efd96c; /* Ombres autour de l'image */
+    border-radius: 10%;
+}
+
+/* Titre de la section à propos */
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+/* SECTION DE CONTACT */
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+/* Formulaire de contact */
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Champs du formulaire */
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+/* FOOTER */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+/* Liens des réseaux sociaux dans le footer */
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid #efd96c;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px #efd96c, 0 0 10px #efd96c;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px); /* Animation au survol */
+    color: #efd96c;
+    border: 2px solid #efd96c;
+}
+
+/* Liste de liens dans le footer */
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid #efd96c;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/* Copyright dans le footer */
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
